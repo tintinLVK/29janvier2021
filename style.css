@@ -1,0 +1,30 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer"
+}
+header{
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+}
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 20px 40px;
+}
